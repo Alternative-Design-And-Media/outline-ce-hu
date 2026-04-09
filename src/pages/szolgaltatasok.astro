@@ -1,0 +1,224 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import { SITE_TITLE } from '../consts';
+---
+
+<!doctype html>
+<html lang="hu">
+	<head>
+		<BaseHead title={`Szolgáltatások | ${SITE_TITLE}`} description="Professzionális hangtechnikai szolgáltatásaink: hangosítás, rendszertervezés, rendezvénytechnika és szerviz." />
+	</head>
+	<body>
+		<Header />
+		<main>
+			<!-- Page Header -->
+			<section class="page-header">
+				<div class="container">
+					<h1>Szolgáltatásaink</h1>
+					<p>Teljes körű professzionális hangtechnikai megoldások</p>
+				</div>
+			</section>
+
+			<!-- Services Detail -->
+			<section class="services-detail">
+				<div class="container">
+					<div class="service-detail-card">
+						<div class="service-detail-icon">🔊</div>
+						<div class="service-detail-content">
+							<h2>Hangosítás</h2>
+							<p>
+								Professzionális hangosító rendszerek tervezése és telepítése a legkülönbözőbb helyszínekre.
+								Legyen szó koncertteremről, konferenciateremről, sportlétesítményről vagy szabadtéri
+								rendezvényhelyszínről, a legmodernebb technológiával biztosítjuk a tökéletes hangzást.
+							</p>
+							<ul>
+								<li>Line array rendszerek tervezése és telepítése</li>
+								<li>Állandó hangosító rendszerek kiépítése</li>
+								<li>Akusztikai mérések és optimalizálás</li>
+								<li>Digitális hangfeldolgozó rendszerek</li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="service-detail-card reverse">
+						<div class="service-detail-icon">🎛️</div>
+						<div class="service-detail-content">
+							<h2>Rendszertervezés</h2>
+							<p>
+								Egyedi audió rendszerek megtervezése a megrendelő igényeinek és a helyszín adottságainak
+								figyelembevételével. Modern szimulációs szoftverekkel és akusztikai modellezéssel
+								biztosítjuk az optimális hangminőséget.
+							</p>
+							<ul>
+								<li>3D akusztikai modellezés és szimuláció</li>
+								<li>Rendszertervek és dokumentáció készítése</li>
+								<li>Költségvetés és projektmenedzsment</li>
+								<li>Gyártói konzultáció és termékválasztás</li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="service-detail-card">
+						<div class="service-detail-icon">🎵</div>
+						<div class="service-detail-content">
+							<h2>Rendezvénytechnika</h2>
+							<p>
+								Rendezvények teljes hangtechnikai kiszolgálása a tervezéstől a helyszíni megvalósításig.
+								Tapasztalt csapatunk a legkisebb vállalati rendezvénytől a legnagyobb fesztiválokig
+								biztosítja a professzionális hangzást.
+							</p>
+							<ul>
+								<li>Koncertek és fesztiválok hangosítása</li>
+								<li>Konferenciák és céges rendezvények technikája</li>
+								<li>Színházi és művelődési házak hangosítása</li>
+								<li>Szabadtéri rendezvények hangtechnikája</li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="service-detail-card reverse">
+						<div class="service-detail-icon">🛠️</div>
+						<div class="service-detail-content">
+							<h2>Szerviz és Támogatás</h2>
+							<p>
+								Professzionális szerviz és műszaki támogatás a hangosító rendszerek hosszú távú,
+								megbízható működéséhez. Gyors hibaelhárítás, rendszeres karbantartás és
+								folyamatos szakmai tanácsadás.
+							</p>
+							<ul>
+								<li>Garanciális és garancián túli javítás</li>
+								<li>Rendszeres karbantartási programok</li>
+								<li>Távoli diagnosztika és támogatás</li>
+								<li>Alkatrész-ellátás és csere</li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="service-detail-card">
+						<div class="service-detail-icon">📐</div>
+						<div class="service-detail-content">
+							<h2>Akusztikai Tanácsadás</h2>
+							<p>
+								Szakértői tanácsadás akusztikai kérdésekben, legyen szó új épületek tervezéséről
+								vagy meglévő terek akusztikai javításáról. Mérésekkel alátámasztott javaslatok
+								az optimális hangzás eléréséhez.
+							</p>
+							<ul>
+								<li>Akusztikai felmérés és mérés</li>
+								<li>Teremakusztikai javaslatok</li>
+								<li>Zajvédelmi megoldások</li>
+								<li>Hangszigeteléstechnikai konzultáció</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- CTA -->
+			<section class="cta-section">
+				<div class="container text-center">
+					<h2>Érdekli valamelyik szolgáltatásunk?</h2>
+					<p>Kérjen egyedi ajánlatot az Ön igényeire szabva.</p>
+					<a href="/kapcsolat" class="btn btn-primary">Ajánlatkérés</a>
+				</div>
+			</section>
+		</main>
+		<Footer />
+	</body>
+</html>
+
+<style>
+	.page-header {
+		background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%);
+		color: var(--white);
+		padding: 4rem 1.5em;
+		text-align: center;
+	}
+	.page-header h1 {
+		color: var(--white);
+		margin-bottom: 0.5rem;
+	}
+	.page-header p {
+		color: rgba(255, 255, 255, 0.8);
+		font-size: 1.15em;
+	}
+
+	.services-detail {
+		padding: var(--section-padding);
+	}
+
+	.service-detail-card {
+		display: grid;
+		grid-template-columns: 100px 1fr;
+		gap: 2rem;
+		padding: 2.5rem 0;
+		border-bottom: 1px solid rgb(var(--gray-light));
+		align-items: start;
+	}
+	.service-detail-card:last-child {
+		border-bottom: none;
+	}
+	.service-detail-icon {
+		font-size: 3em;
+		text-align: center;
+		padding-top: 0.2em;
+	}
+	.service-detail-content h2 {
+		color: var(--primary);
+		margin-bottom: 0.8rem;
+		font-size: 1.6em;
+	}
+	.service-detail-content p {
+		color: rgb(var(--gray-dark));
+		line-height: 1.8;
+		margin-bottom: 1rem;
+	}
+	.service-detail-content ul {
+		list-style: none;
+		padding: 0;
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: 0.5rem;
+	}
+	.service-detail-content ul li {
+		padding: 0.3em 0;
+		padding-left: 1.5em;
+		position: relative;
+		font-size: 0.95em;
+		color: rgb(var(--gray-dark));
+	}
+	.service-detail-content ul li::before {
+		content: "✓";
+		position: absolute;
+		left: 0;
+		color: var(--accent);
+		font-weight: 700;
+	}
+
+	.cta-section {
+		background: linear-gradient(135deg, var(--primary-light) 0%, var(--primary) 100%);
+		color: var(--white);
+		padding: var(--section-padding);
+	}
+	.cta-section h2 {
+		color: var(--white);
+		margin-bottom: 1rem;
+	}
+	.cta-section p {
+		color: rgba(255, 255, 255, 0.85);
+		margin-bottom: 2rem;
+		font-size: 1.05em;
+	}
+
+	@media (max-width: 720px) {
+		.service-detail-card {
+			grid-template-columns: 1fr;
+			text-align: center;
+		}
+		.service-detail-content ul {
+			grid-template-columns: 1fr;
+		}
+	}
+</style>
