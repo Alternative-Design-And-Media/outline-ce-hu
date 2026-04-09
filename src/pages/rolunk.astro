@@ -1,0 +1,212 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import { SITE_TITLE, COMPANY_NAME } from '../consts';
+---
+
+<!doctype html>
+<html lang="hu">
+	<head>
+		<BaseHead title={`Rólunk | ${SITE_TITLE}`} description="Ismerje meg az Outline CE Hungary csapatát és történetünket. Több évtizedes tapasztalat a professzionális hangtechnika terén." />
+	</head>
+	<body>
+		<Header />
+		<main>
+			<!-- Page Header -->
+			<section class="page-header">
+				<div class="container">
+					<h1>Rólunk</h1>
+					<p>Ismerjék meg az {COMPANY_NAME} csapatát</p>
+				</div>
+			</section>
+
+			<!-- About Content -->
+			<section class="about-content">
+				<div class="container">
+					<div class="about-intro">
+						<h2>Történetünk</h2>
+						<p>
+							Az {COMPANY_NAME} a professzionális hangtechnika terén több évtizedes tapasztalattal rendelkező vállalat.
+							Cégünk a közép-európai régió egyik meghatározó szereplője a hangosítási technológia területén.
+						</p>
+						<p>
+							Alapításunk óta célunk, hogy ügyfeleinknek a legmagasabb minőségű audió megoldásokat nyújtsuk.
+							A világ vezető hangosítási technológiáit képviseljük Magyarországon, és széleskörű műszaki
+							tudásunkat állítjuk partnereink szolgálatába.
+						</p>
+					</div>
+
+					<!-- Values -->
+					<div class="values-section">
+						<h2 class="section-title">Értékeink</h2>
+						<div class="values-grid">
+							<div class="value-card">
+								<h3>🎯 Minőség</h3>
+								<p>
+									Csak a legjobb minőségű termékeket és szolgáltatásokat kínáljuk.
+									Minden projektben a tökéletességre törekszünk.
+								</p>
+							</div>
+							<div class="value-card">
+								<h3>🤝 Megbízhatóság</h3>
+								<p>
+									Partnereink számíthatnak ránk. Pontos szállítás, precíz kivitelezés
+									és folyamatos műszaki támogatás jellemez minket.
+								</p>
+							</div>
+							<div class="value-card">
+								<h3>💡 Innováció</h3>
+								<p>
+									Folyamatosan követjük a legújabb technológiai fejlesztéseket,
+									hogy ügyfeleinknek a legmodernebb megoldásokat ajánlhassuk.
+								</p>
+							</div>
+							<div class="value-card">
+								<h3>👥 Szakértelem</h3>
+								<p>
+									Csapatunk tapasztalt mérnökökből és technikusokból áll,
+									akik szenvedélyesen rajonganak a tökéletes hangzásért.
+								</p>
+							</div>
+						</div>
+					</div>
+
+					<!-- Why Us -->
+					<div class="why-us-section">
+						<h2 class="section-title">Miért minket válasszon?</h2>
+						<div class="why-us-grid">
+							<div class="why-us-item">
+								<span class="why-us-number">01</span>
+								<div>
+									<h4>Széleskörű termékportfólió</h4>
+									<p>A világ vezető hangosítási technológiáinak képviselete és forgalmazása Közép-Európában.</p>
+								</div>
+							</div>
+							<div class="why-us-item">
+								<span class="why-us-number">02</span>
+								<div>
+									<h4>Teljes körű megoldások</h4>
+									<p>A tervezéstől a telepítésig és a szervizig minden szolgáltatást egy kézből biztosítunk.</p>
+								</div>
+							</div>
+							<div class="why-us-item">
+								<span class="why-us-number">03</span>
+								<div>
+									<h4>Tapasztalt csapat</h4>
+									<p>Mérnökeink és technikusaink több évtizedes szakmai tapasztalattal rendelkeznek.</p>
+								</div>
+							</div>
+							<div class="why-us-item">
+								<span class="why-us-number">04</span>
+								<div>
+									<h4>Gyors reagálás</h4>
+									<p>24/7 műszaki támogatás és gyors szerviz a rendszerek megbízható működéséhez.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		<Footer />
+	</body>
+</html>
+
+<style>
+	.page-header {
+		background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%);
+		color: var(--white);
+		padding: 4rem 1.5em;
+		text-align: center;
+	}
+	.page-header h1 {
+		color: var(--white);
+		margin-bottom: 0.5rem;
+	}
+	.page-header p {
+		color: rgba(255, 255, 255, 0.8);
+		font-size: 1.15em;
+	}
+
+	.about-content {
+		padding: var(--section-padding);
+	}
+	.about-intro {
+		max-width: 800px;
+		margin: 0 auto 3rem;
+	}
+	.about-intro h2 {
+		color: var(--primary);
+		margin-bottom: 1.5rem;
+	}
+	.about-intro p {
+		line-height: 1.8;
+		color: rgb(var(--gray-dark));
+	}
+
+	.values-section {
+		margin-bottom: 4rem;
+	}
+	.values-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+		gap: 2rem;
+	}
+	.value-card {
+		background: #f8f9fa;
+		padding: 2em;
+		border-radius: 8px;
+		text-align: center;
+	}
+	.value-card h3 {
+		color: var(--primary);
+		margin-bottom: 0.8em;
+		font-size: 1.2em;
+	}
+	.value-card p {
+		color: rgb(var(--gray));
+		font-size: 0.95em;
+		line-height: 1.6;
+	}
+
+	.why-us-grid {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: 2rem;
+		max-width: 900px;
+		margin: 0 auto;
+	}
+	.why-us-item {
+		display: flex;
+		gap: 1.2rem;
+		align-items: flex-start;
+		padding: 1.5em;
+		background: var(--white);
+		border-radius: 8px;
+		border: 1px solid rgb(var(--gray-light));
+	}
+	.why-us-number {
+		font-size: 2em;
+		font-weight: 700;
+		color: var(--accent);
+		line-height: 1;
+		flex-shrink: 0;
+	}
+	.why-us-item h4 {
+		color: var(--primary);
+		margin-bottom: 0.3em;
+	}
+	.why-us-item p {
+		color: rgb(var(--gray));
+		font-size: 0.9em;
+		line-height: 1.6;
+		margin: 0;
+	}
+
+	@media (max-width: 720px) {
+		.why-us-grid {
+			grid-template-columns: 1fr;
+		}
+	}
+</style>
