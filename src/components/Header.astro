@@ -101,7 +101,11 @@ import { COMPANY_NAME } from '../consts';
 	}
 </style>
 <script>
-	document.querySelector('.mobile-toggle')?.addEventListener('click', () => {
-		document.querySelector('.nav-links')?.classList.toggle('open');
-	});
+	const toggle = document.querySelector('.mobile-toggle');
+	const navLinks = document.querySelector('.nav-links');
+	if (toggle && navLinks) {
+		toggle.addEventListener('click', () => {
+			navLinks.classList.toggle('open');
+		});
+	}
 </script>
