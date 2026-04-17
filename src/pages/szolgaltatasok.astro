@@ -14,26 +14,34 @@ import { SITE_TITLE } from '../consts';
 		<Header />
 		<main>
 			<!-- Page Header -->
-			<section class="page-header">
+			<section class="page-hero">
+				<div class="page-hero-bg">
+					<div class="page-hero-grid"></div>
+				</div>
 				<div class="container">
-					<h1>Szolgáltatásaink</h1>
-					<p>Teljes körű professzionális hangtechnikai megoldások</p>
+					<div class="page-hero-content">
+						<span class="section-label reveal">Szolgáltatásaink</span>
+						<h1 class="reveal">Professzionális hangtechnikai megoldások</h1>
+						<p class="reveal">Teljes körű audió megoldások a tervezéstől a kivitelezésig és a szervizszolgáltatásig.</p>
+					</div>
 				</div>
 			</section>
 
-			<!-- Services Detail -->
-			<section class="services-detail">
+			<!-- Services -->
+			<section class="services-section">
 				<div class="container">
-					<div class="service-detail-card">
-						<div class="service-detail-icon">🔊</div>
-						<div class="service-detail-content">
+					<div class="service-item reveal">
+						<div class="service-item-header">
+							<div class="service-number">01</div>
 							<h2>Hangosítás</h2>
+						</div>
+						<div class="service-item-body">
 							<p>
 								Professzionális hangosító rendszerek tervezése és telepítése a legkülönbözőbb helyszínekre.
 								Legyen szó koncertteremről, konferenciateremről, sportlétesítményről vagy szabadtéri
 								rendezvényhelyszínről, a legmodernebb technológiával biztosítjuk a tökéletes hangzást.
 							</p>
-							<ul>
+							<ul class="service-features">
 								<li>Line array rendszerek tervezése és telepítése</li>
 								<li>Állandó hangosító rendszerek kiépítése</li>
 								<li>Akusztikai mérések és optimalizálás</li>
@@ -42,16 +50,18 @@ import { SITE_TITLE } from '../consts';
 						</div>
 					</div>
 
-					<div class="service-detail-card reverse">
-						<div class="service-detail-icon">🎛️</div>
-						<div class="service-detail-content">
+					<div class="service-item reveal">
+						<div class="service-item-header">
+							<div class="service-number">02</div>
 							<h2>Rendszertervezés</h2>
+						</div>
+						<div class="service-item-body">
 							<p>
 								Egyedi audió rendszerek megtervezése a megrendelő igényeinek és a helyszín adottságainak
 								figyelembevételével. Modern szimulációs szoftverekkel és akusztikai modellezéssel
 								biztosítjuk az optimális hangminőséget.
 							</p>
-							<ul>
+							<ul class="service-features">
 								<li>3D akusztikai modellezés és szimuláció</li>
 								<li>Rendszertervek és dokumentáció készítése</li>
 								<li>Költségvetés és projektmenedzsment</li>
@@ -60,16 +70,18 @@ import { SITE_TITLE } from '../consts';
 						</div>
 					</div>
 
-					<div class="service-detail-card">
-						<div class="service-detail-icon">🎵</div>
-						<div class="service-detail-content">
+					<div class="service-item reveal">
+						<div class="service-item-header">
+							<div class="service-number">03</div>
 							<h2>Rendezvénytechnika</h2>
+						</div>
+						<div class="service-item-body">
 							<p>
 								Rendezvények teljes hangtechnikai kiszolgálása a tervezéstől a helyszíni megvalósításig.
 								Tapasztalt csapatunk a legkisebb vállalati rendezvénytől a legnagyobb fesztiválokig
 								biztosítja a professzionális hangzást.
 							</p>
-							<ul>
+							<ul class="service-features">
 								<li>Koncertek és fesztiválok hangosítása</li>
 								<li>Konferenciák és céges rendezvények technikája</li>
 								<li>Színházi és művelődési házak hangosítása</li>
@@ -78,16 +90,18 @@ import { SITE_TITLE } from '../consts';
 						</div>
 					</div>
 
-					<div class="service-detail-card reverse">
-						<div class="service-detail-icon">🛠️</div>
-						<div class="service-detail-content">
+					<div class="service-item reveal">
+						<div class="service-item-header">
+							<div class="service-number">04</div>
 							<h2>Szerviz és Támogatás</h2>
+						</div>
+						<div class="service-item-body">
 							<p>
 								Professzionális szerviz és műszaki támogatás a hangosító rendszerek hosszú távú,
 								megbízható működéséhez. Gyors hibaelhárítás, rendszeres karbantartás és
 								folyamatos szakmai tanácsadás.
 							</p>
-							<ul>
+							<ul class="service-features">
 								<li>Garanciális és garancián túli javítás</li>
 								<li>Rendszeres karbantartási programok</li>
 								<li>Távoli diagnosztika és támogatás</li>
@@ -96,16 +110,18 @@ import { SITE_TITLE } from '../consts';
 						</div>
 					</div>
 
-					<div class="service-detail-card">
-						<div class="service-detail-icon">📐</div>
-						<div class="service-detail-content">
+					<div class="service-item reveal">
+						<div class="service-item-header">
+							<div class="service-number">05</div>
 							<h2>Akusztikai Tanácsadás</h2>
+						</div>
+						<div class="service-item-body">
 							<p>
 								Szakértői tanácsadás akusztikai kérdésekben, legyen szó új épületek tervezéséről
 								vagy meglévő terek akusztikai javításáról. Mérésekkel alátámasztott javaslatok
 								az optimális hangzás eléréséhez.
 							</p>
-							<ul>
+							<ul class="service-features">
 								<li>Akusztikai felmérés és mérés</li>
 								<li>Teremakusztikai javaslatok</li>
 								<li>Zajvédelmi megoldások</li>
@@ -118,10 +134,13 @@ import { SITE_TITLE } from '../consts';
 
 			<!-- CTA -->
 			<section class="cta-section">
-				<div class="container text-center">
-					<h2>Érdekli valamelyik szolgáltatásunk?</h2>
-					<p>Kérjen egyedi ajánlatot az Ön igényeire szabva.</p>
-					<a href="/kapcsolat" class="btn btn-primary">Ajánlatkérés</a>
+				<div class="container">
+					<div class="cta-inner reveal">
+						<span class="section-label">Indítsuk el együtt</span>
+						<h2>Érdekli valamelyik szolgáltatásunk?</h2>
+						<p>Kérjen egyedi ajánlatot az Ön igényeire szabva — csapatunk készen áll segíteni.</p>
+						<a href="/kapcsolat" class="btn btn-primary">Ajánlatkérés</a>
+					</div>
 				</div>
 			</section>
 		</main>
@@ -130,95 +149,161 @@ import { SITE_TITLE } from '../consts';
 </html>
 
 <style>
-	.page-header {
-		background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%);
-		color: var(--white);
-		padding: 4rem 1.5em;
-		text-align: center;
+	/* Page hero */
+	.page-hero {
+		position: relative;
+		padding: calc(var(--nav-height) + 5rem) 0 5rem;
+		background: var(--bg-primary);
+		overflow: hidden;
 	}
-	.page-header h1 {
-		color: var(--white);
-		margin-bottom: 0.5rem;
+	.page-hero-bg {
+		position: absolute;
+		inset: 0;
+		pointer-events: none;
 	}
-	.page-header p {
-		color: rgba(255, 255, 255, 0.8);
-		font-size: 1.15em;
+	.page-hero-grid {
+		position: absolute;
+		inset: 0;
+		background-image:
+			linear-gradient(var(--border) 1px, transparent 1px),
+			linear-gradient(90deg, var(--border) 1px, transparent 1px);
+		background-size: 60px 60px;
+		mask-image: radial-gradient(ellipse 100% 100% at 50% 0%, black 20%, transparent 80%);
+	}
+	.page-hero-content {
+		position: relative;
+		z-index: 1;
+		max-width: 700px;
+	}
+	.page-hero-content h1 {
+		margin: 0.5rem 0 1rem;
+	}
+	.page-hero-content p {
+		color: var(--text-secondary);
+		font-size: 1.1rem;
+		line-height: 1.7;
+		margin: 0;
 	}
 
-	.services-detail {
+	/* Services list */
+	.services-section {
 		padding: var(--section-padding);
+		background: var(--bg-secondary);
+	}
+	.service-item {
+		display: grid;
+		grid-template-columns: 280px 1fr;
+		gap: 3rem;
+		padding: 3.5rem 0;
+		border-bottom: 1px solid var(--border);
+	}
+	.service-item:last-child { border-bottom: none; }
+
+	.service-item-header {
+		padding-top: 0.2rem;
+	}
+	.service-number {
+		font-size: 0.75rem;
+		font-weight: 600;
+		letter-spacing: 0.1em;
+		color: var(--accent);
+		margin-bottom: 0.75rem;
+	}
+	.service-item-header h2 {
+		font-size: clamp(1.6rem, 2.5vw, 2.2rem);
 	}
 
-	.service-detail-card {
-		display: grid;
-		grid-template-columns: 100px 1fr;
-		gap: 2rem;
-		padding: 2.5rem 0;
-		border-bottom: 1px solid rgb(var(--gray-light));
-		align-items: start;
-	}
-	.service-detail-card:last-child {
-		border-bottom: none;
-	}
-	.service-detail-icon {
-		font-size: 3em;
-		text-align: center;
-		padding-top: 0.2em;
-	}
-	.service-detail-content h2 {
-		color: var(--primary);
-		margin-bottom: 0.8rem;
-		font-size: 1.6em;
-	}
-	.service-detail-content p {
-		color: rgb(var(--gray-dark));
+	.service-item-body p {
+		color: var(--text-secondary);
 		line-height: 1.8;
-		margin-bottom: 1rem;
+		margin-bottom: 1.5rem;
+		font-size: 0.95rem;
 	}
-	.service-detail-content ul {
+	.service-features {
 		list-style: none;
 		padding: 0;
+		margin: 0;
 		display: grid;
 		grid-template-columns: 1fr 1fr;
-		gap: 0.5rem;
+		gap: 0.6rem;
 	}
-	.service-detail-content ul li {
-		padding: 0.3em 0;
-		padding-left: 1.5em;
+	.service-features li {
+		padding: 0.5rem 0.75rem;
+		padding-left: 1.5rem;
 		position: relative;
-		font-size: 0.95em;
-		color: rgb(var(--gray-dark));
+		font-size: 0.85rem;
+		color: var(--text-secondary);
+		background: var(--bg-card);
+		border: 1px solid var(--border);
+		border-radius: 4px;
 	}
-	.service-detail-content ul li::before {
-		content: "✓";
+	.service-features li::before {
+		content: "";
 		position: absolute;
-		left: 0;
-		color: var(--accent);
-		font-weight: 700;
+		left: 0.75rem;
+		top: 50%;
+		transform: translateY(-50%);
+		width: 4px;
+		height: 4px;
+		border-radius: 50%;
+		background: var(--accent);
 	}
 
+	/* CTA */
 	.cta-section {
-		background: linear-gradient(135deg, var(--primary-light) 0%, var(--primary) 100%);
-		color: var(--white);
+		background: var(--bg-primary);
+		border-top: 1px solid var(--border);
 		padding: var(--section-padding);
 	}
-	.cta-section h2 {
-		color: var(--white);
-		margin-bottom: 1rem;
+	.cta-inner {
+		border: 1px solid var(--border);
+		border-radius: 8px;
+		background: var(--bg-card);
+		padding: 4rem;
+		text-align: center;
+		position: relative;
+		overflow: hidden;
 	}
-	.cta-section p {
-		color: rgba(255, 255, 255, 0.85);
-		margin-bottom: 2rem;
-		font-size: 1.05em;
+	.cta-inner::before {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 50%;
+		transform: translateX(-50%);
+		width: 200px;
+		height: 1px;
+		background: var(--accent);
+	}
+	.cta-inner h2 { margin: 0.5rem 0 1rem; }
+	.cta-inner p {
+		color: var(--text-secondary);
+		max-width: 520px;
+		margin: 0 auto 2.5rem;
+		font-size: 0.95rem;
 	}
 
-	@media (max-width: 720px) {
-		.service-detail-card {
+	@media (max-width: 768px) {
+		.service-item {
 			grid-template-columns: 1fr;
-			text-align: center;
+			gap: 1.5rem;
 		}
-		.service-detail-content ul {
-			grid-template-columns: 1fr;
-		}
+		.service-features { grid-template-columns: 1fr; }
+		.cta-inner { padding: 2.5rem 1.5rem; }
 	}
 </style>
+
+<script>
+	const revealEls = document.querySelectorAll('.reveal');
+	const observer = new IntersectionObserver(
+		(entries) => {
+			entries.forEach((entry) => {
+				if (entry.isIntersecting) {
+					entry.target.classList.add('visible');
+					observer.unobserve(entry.target);
+				}
+			});
+		},
+		{ threshold: 0.1, rootMargin: '0px 0px -40px 0px' }
+	);
+	revealEls.forEach((el) => observer.observe(el));
+</script>
