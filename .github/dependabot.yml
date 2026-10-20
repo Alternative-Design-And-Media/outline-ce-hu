@@ -1,0 +1,14 @@
+version: 2
+updates:
+  - package-ecosystem: "npm"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+    ignore:
+      # Astro 7 főverzió-váltás: külön migrációs döntés (Gergő, 2026-10-20)
+      - dependency-name: "astro"
+        update-types: ["version-update:semver-major"]
+      - dependency-name: "@astrojs/cloudflare"
+        update-types: ["version-update:semver-major"]
+      - dependency-name: "@astrojs/mdx"
+        update-types: ["version-update:semver-major"]
